@@ -34,5 +34,3 @@ clean:
 	rm -f *.o $(TARGET)
 
 
-gcc -c ui.c xstuff.c nbody_tools.c nbody_alloc.c
-mpicc -lm -lpthread -L/usr/X11/lib -lX11  nbody_brute_force.c ui.o xstuff.o nbody_tools.o nbody_alloc.o -o nbody_brute_force
